@@ -38,7 +38,7 @@ body{
 #titre{
     display: block;
     text-align: center;
-    margin-top: 25vh;
+    margin-top: 20vh;
 
 }
 h1 {
@@ -69,13 +69,13 @@ h1 {
 .arrow_carrot-down {
     position: absolute;
     font-size: 60px;
-    top: 93vh;
+    top: 90vh;
     transition-duration: 0.5s;
     color:white;
 }
 
 .arrow_carrot-down:hover {
-    top: 91vh;
+    top: 88vh;
     transition-duration: 1s;
 }
 
