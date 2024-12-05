@@ -5,6 +5,53 @@ html{
     padding: 0;
 }
 
+body{
+    background-color: rgb(246, 246, 246);
+}
+
+#cadre_articles{
+    display: flex;
+    justify-content: center;
+}
+
 .articles {
-    color:red;
+    margin-top: 150px;
+    width: 75%;
+    background-color: white;
+    padding: 100px;
+    padding-top: 80px;
+    border-top: 5px solid rgb(209, 209, 209);
+}
+
+#titre{
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 2.1em;
+}
+
+#ligne{
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+h2{
+
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+p{
+    margin-left: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+
+}
+
+.fleche{
+    font-size: 20px;
 }

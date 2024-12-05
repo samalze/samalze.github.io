@@ -35,10 +35,10 @@
     transition-duration: 0.5s;
 }
 
-/* .taille{
+.taille{
     font-size: 25px;
     transition-duration: 0.5s;
-} */
+}
 
 .lien_banderole{
     font-family: "Montserrat", sans-serif;
@@ -51,12 +51,9 @@
     transition-duration: 1s;
 }
 
-.lien_banderole:hover{
-    transform: scale(1.15);    
-    transition-duration: 0.5s;
+.lien_banderole:hover{   
+    transition-duration: 1s;
     font-weight: 250;
-    /* opacity: 100%; */
-    /* color: blue; */
 }
 
 .taille1{
