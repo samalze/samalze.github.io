@@ -26,10 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 function scroll() {
-    window.scrollTo({
+    window.scroll({
         top: 2000, // Position verticale en pixels
         behavior: 'smooth' // Défilement fluide
     });
+    alert("uwu");
 }
 
 document.getElementsByClassName('arrow_carrot-down').onclick = scroll;

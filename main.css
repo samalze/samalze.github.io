@@ -86,17 +86,18 @@ body{
     background-size:1500px;
     background-position: bottom;
     background-repeat: no-repeat;
-    height:537px;
+    height: 90vh;
     -webkit-text-size-adjust: 100%;
     background-blend-mode: overlay;
-    margin-top:80px;
+    margin-top:10vh;
+    background-size:100% ; /* permet de stretch l'image de pumba sur tt l'ecran pour les ecrans plus grands  */
 }
 
 
 #titre{
     display: block;
     text-align: center;
-    margin-top: 65px;
+    margin-top: 25vh;
 
 }
 h1 {
@@ -127,13 +128,13 @@ h1 {
 .arrow_carrot-down {
     position: absolute;
     font-size: 60px;
-    top: 530px;
+    top: 93vh;
     transition-duration: 0.5s;
     color:white;
 }
 
 .arrow_carrot-down:hover {
-    top: 518px;
+    top: 91vh;
     transition-duration: 1s;
 }
 
