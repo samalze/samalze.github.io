@@ -23,3 +23,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+
+function scroll() {
+    window.scrollTo({
+        top: 2000, // Position verticale en pixels
+        behavior: 'smooth' // Défilement fluide
+    });
+}
+
+document.getElementsByClassName('arrow_carrot-down').onclick = scroll;
