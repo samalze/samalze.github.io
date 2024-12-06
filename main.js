@@ -15,11 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
             banderole.classList.add('transparent'); // Ajoute la classe "transparent"
             titre.classList.add('taille'); // Ajoute la classe "transparent"
             lien.classList.add('taille1'); // Ajoute la classe "transparent"
+            document.getElementById("menu").classList.add("makeSmaller");
         } else {
             banderole.classList.remove('transparent'); // Retire la classe "transparent"
             titre.classList.remove('taille'); // Retire la classe "transparent"
             lien.classList.remove('taille'); // Retire la classe "transparent"
-
+            document.getElementById("menu").classList.remove("makeSmaller");
         }
     });
 });
@@ -34,3 +35,19 @@ function scroll() {
 }
 
 document.getElementsByClassName('arrow_carrot-down').onclick = scroll;
+
+
+
+
+let openOrClosed = false;
+function showMenu(){
+    if(openOrClosed == false) {
+        document.getElementById("menuMainContainer").style.height = "100%";
+        document.getElementById("menu").classList.add("rotateRight90");
+    }
+    else {
+        document.getElementById("menuMainContainer").style.height = "0";
+        document.getElementById("menu").classList.remove("rotateRight90");
+    }
+    openOrClosed = !openOrClosed;
+}
