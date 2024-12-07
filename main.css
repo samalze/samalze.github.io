@@ -98,7 +98,7 @@ h1 {
 }
 
 .arrow_carrot-down {
-    text-shadow: -1px -1px 0 #636363, 1px -1px 0 #636363, -1px 1px 0 #636363, 1px 1px 0 #636363;
+    text-shadow: -2px -2px 7px #636363, 2px -2px 7px #636363, -2px 2px 7px #636363, 2px 2px 7px #636363;
     justify-self: center;
     align-items: center;
     /* flex-direction: column; */
@@ -116,7 +116,7 @@ h1 {
 }
 
 .arrow_carrot-down:hover {
-transform: translateY(0);    transition-duration: 1s;
+transform: translateY(0);    transition-duration: 3s;
 }
 
 
