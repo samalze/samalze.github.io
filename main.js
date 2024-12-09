@@ -40,11 +40,13 @@ document.getElementsByClassName('arrow_carrot-down').onclick = scroll;
 let openOrClosed = false;
 function showMenu(){
     if(openOrClosed == false) {
-        document.getElementById("menuMainContainer").style.height = "100%";
+        document.getElementById("menuWrapper").style.height = "100%";
+        document.getElementById("menuWrapper").style.visibility = "visible";
         document.getElementById("menu").classList.add("rotateRight90");
     }
     else {
-        document.getElementById("menuMainContainer").style.height = "0";
+        document.getElementById("menuWrapper").style.height = "0";
+        document.getElementById("menuWrapper").style.visibility = "hidden";
         document.getElementById("menu").classList.remove("rotateRight90");
     }
     openOrClosed = !openOrClosed;
