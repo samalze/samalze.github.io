@@ -1,8 +1,9 @@
 html{
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body{
+    overflow-x: hidden;
     margin: 0px;
 }
 
@@ -32,8 +33,8 @@ body{
     background-position: top;
     background-repeat: no-repeat; */
     display: grid;
-    grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
-    grid-template-rows: 10.75vh 10.75vh 10.75vh 10.75vh 10.75vh 10.75vh 10.75vh 10.75vh 10.75vh  ;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(8,1fr)  ;
     /* background-color: #2196F3; */
     /* padding: 11,11\px; */
 
@@ -100,7 +101,7 @@ h1 {
 .arrow_carrot-down {
     text-shadow: -2px -2px 7px #636363, 2px -2px 7px #636363, -2px 2px 7px #636363, 2px 2px 7px #636363;
     justify-self: center;
-    align-items: center;
+    align-items: flex-start;
     /* flex-direction: column; */
     display: grid;
     /* position:absolute; */
@@ -116,17 +117,43 @@ h1 {
 }
 
 .arrow_carrot-down:hover {
-transform: translateY(0);    transition-duration: 3s;
+    transform: translateY(0);
+        transition-duration: 2s;
 }
 
+/*  |||||||||||||||||||||||||Contacts : Whatsapp / header |||||||||||||||||||||||||||| */
 
+#contactWrapper{
+    height: 100vh ;
+    /* background: red; */
+    display: grid;
+    
+    grid-template-columns: repeat(2,1fr)  ;
+    grid-template-rows: repeat(3,1fr)  ;
+    /* column-gap: 15fr; */
+    /* row-gap: 2fr; */
+}
 
+.contactWrapperContainer {
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    margin: 30px;
+    border-radius: 30px;
+    background: green;
+}
 
+.contactWrapperContainer:hover{
+    /* transition: all 0.5s; */
+    /* transform: translate(150px); */
+    transform: scale(1.01);
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+}
 
-
-
-
-
-
-
-
+.contactHeader {
+    grid-column-start: 1;
+    grid-column-end: 3;  
+}
+.contactContainer {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}

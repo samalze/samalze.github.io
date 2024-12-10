@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function scrollDown() { // le pb etait que le nom etait scroll() et c'est une fonction qui existe deja;)
     let vh = 100; //valeur en vh [100vh = ecran en entier en hauter] 
-    let pixels = (vh * window.innerHeight) / 100 - 70; //calculer le nombre de pixels auquel vh correspond et soustraire 70 donc la taille du header replie
+    let pixels = (vh * window.innerHeight) / 100// - 70; //calculer le nombre de pixels auquel vh correspond et soustraire 70 donc la taille du header replie
     window.scrollTo(0, pixels);
 }
 
