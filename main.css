@@ -124,7 +124,7 @@ h1 {
 /*  |||||||||||||||||||||||||Contacts : Whatsapp / header |||||||||||||||||||||||||||| */
 
 #contactWrapper{
-    height: 100vh ;
+    /* height: 100vh ; */
     /* background: red; */
     display: grid;
     
