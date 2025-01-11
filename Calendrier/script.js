@@ -19,6 +19,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     //Roles
     let roles = getRoles(pumbaMonth);
+    console.log('AAA' + roles)
+
     document.getElementById("Legislatif").innerHTML     =   "Législatif : " + roles[0]
     document.getElementById("Executif").innerHTML       =   "Exécutif   : " + roles[1] 
     document.getElementById("Judiciaire").innerHTML     =   "Judiciaire : " + roles[2] 
@@ -48,9 +50,12 @@ function getRoles(pumbaMonth){
             return  [    i    ,     m  ,   n        ]
         case 2 :
             //      Legislatif, Executif, Judiciaire
-            return  [    n    ,     i  ,   j        ]
+            return  [    n    ,     i  ,      m    ]
         case 3 :
             //      Legislatif, Executif, Judiciaire
-            return  [    j    ,     n  ,   m        ]
+            return  [    m    ,     n  ,   i        ]
+        default:
+            console.log('ERror')
+            break;
     }
 }

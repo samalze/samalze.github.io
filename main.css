@@ -153,6 +153,7 @@ h1 {
 }
 
 .contactWrapperContainer:hover{
+    z-index: -15;
     /* transition: all 0.5s; */
     /* transform: translate(150px); */
     transform: scale(1.01);
@@ -161,9 +162,12 @@ h1 {
 
 .contactHeader {
     grid-column-start: 1;
+    z-index: -15;
     grid-column-end: 3;  
 }
 .contactContainer {
+    z-index: -15;
+
     grid-row-start: 2;
     grid-row-end: 4;
 }

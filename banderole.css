@@ -60,11 +60,16 @@
 #menuContentContainer {
     text-align: center;
     width:80%;
+    text-decoration: none;
     margin-top:15vh;
     /* background:red; */
+    font-family: 'Montserrat';
 }
 
-
+#menuContentContainer a {
+    text-decoration: none;
+    color:black
+}
 .menuIcon {
     background: black;
     width:33px;
