@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const date  = new Date();
     
-    let nbMoisparAn = 4;
+    let nbMoisparAn = 3;
 
     let year    = date.getFullYear();
     let month   = date.getMonth()+1;
@@ -11,11 +11,17 @@ document.addEventListener('DOMContentLoaded', function() {
     let pumbaYear;
     month%nbMoisparAn==0? pumbaYear = Math.floor((month-1)/nbMoisparAn): pumbaYear=Math.floor(month/nbMoisparAn);
 
-    document.getElementById("day").innerHTML =   "Jour: " + day.toString()
-    document.getElementById("month").innerHTML =   "Mois: " + pumbaMonth.toString() 
-    document.getElementById("year").innerHTML =   "An: " + pumbaYear.toString() 
+
+    //Date
+    document.getElementById("day").innerHTML    =   "Jour: " + day.toString()
+    document.getElementById("month").innerHTML  =   "Mois: " + pumbaMonth.toString() 
+    document.getElementById("year").innerHTML   =   "An: " + pumbaYear.toString() 
     
-    console.log("ALDJAOSIJD");
+    //Roles
+    let roles = getRoles(pumbaMonth);
+    document.getElementById("Legislatif").innerHTML     =   "Législatif : " + roles[0]
+    document.getElementById("Executif").innerHTML       =   "Exécutif   : " + roles[1] 
+    document.getElementById("Judiciaire").innerHTML     =   "Judiciaire : " + roles[2] 
     
 }, false);
 
@@ -29,4 +35,22 @@ function  positionOverflow(place, nbMax = 4) {
     let b;
     place%nbMax!=0 ? b = place - a * nbMax : b = nbMax;
     return b
+}
+
+function getRoles(pumbaMonth){
+    const i = 'Ivan'
+    const n = 'Nam'
+    const m = 'Maxime'
+
+    switch(pumbaMonth){
+        case 1 :
+            //      Legislatif, Executif, Judiciaire
+            return  [    i    ,     m  ,   n        ]
+        case 2 :
+            //      Legislatif, Executif, Judiciaire
+            return  [    n    ,     i  ,   j        ]
+        case 3 :
+            //      Legislatif, Executif, Judiciaire
+            return  [    j    ,     n  ,   m        ]
+    }
 }

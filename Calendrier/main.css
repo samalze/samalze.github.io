@@ -3,7 +3,7 @@
 
 }
 
-.date
+.date, .roles
 {   
     display: flex;
     justify-content: center;
@@ -13,7 +13,7 @@
     font-style: normal;
     font-size: 60px;
 }
-.date span 
+.date span , .roles p
 {
     padding:1%;
     border-radius:15px;
