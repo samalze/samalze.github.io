@@ -1,12 +1,13 @@
 .wrapper{
-    margin-top:20vh;
+    margin-top:13vh;
 
 }
 
 
 .date, .roles
 {   
-    margin-top:50px;
+    margin-bottom: 1%;
+    margin-top: 1%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -17,11 +18,11 @@
     font-size: 45px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     width: 80%;
-    margin-left: 9.5%;
     padding: 1%;
-    border-radius:25px;
+    /* border-radius:25px; */
 
 }
+
 .date span , .roles p
 {
     transition: 1s;
@@ -29,13 +30,39 @@
     padding:1%;
     margin:0;
     border-radius:15px;
-    /* background: rgb(201, 23, 255); */
-     /* background: rgb(255,199,0); */
-    /* background: linear-gradient(0deg, rgba(255,199,0,1) 0%, rgba(132,228,109,1) 100%);  */
 }
+
 .date span:hover , .roles p:hover
 {   
     transform: scale(1.05);
     transition: 1s;
-    background: rgba(212, 176, 176, 0.322);
+}
+
+.wrapper 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+}
+
+
+#rappel {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+    padding: 2%;
+    background: rgba(175, 175, 175, 0.5);
+    margin: 30px;
+    border-radius:5px;
+    width: 78%;
+}
+
+.texte { 
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
+    font-size: 25px;
 }

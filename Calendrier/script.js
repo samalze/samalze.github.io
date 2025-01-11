@@ -1,4 +1,5 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() 
+{
     const date  = new Date();
     
     let nbMoisparAn = 3;
@@ -7,14 +8,15 @@ document.addEventListener('DOMContentLoaded', function() {
     let month   = date.getMonth()+1;
     let day     = date.getDate();
     
-    let pumbaMonth  =   positionOverflow(month,nbMoisparAn)
+    let pumbaMonth  =   positionOverflow(month+7,nbMoisparAn)
     let pumbaYear;
-    month%nbMoisparAn==0? pumbaYear = Math.floor((month-1)/nbMoisparAn): pumbaYear=Math.floor(month/nbMoisparAn);
+    month%nbMoisparAn==0? pumbaYear = Math.floor((month-1)/nbMoisparAn) + 3: pumbaYear=Math.floor(month/nbMoisparAn) + 3;
 
 
     //Date
     document.getElementById("day").innerHTML    =   "Jour: " + day.toString()
-    document.getElementById("month").innerHTML  =   "Mois: " + pumbaMonth.toString() 
+    // document.getElementById("month").innerHTML  =   "Mois: " + pumbaMonth.toString() 
+    document.getElementById("month").innerHTML  =   "Mois: " + getMonthName(pumbaMonth) + " ("+pumbaMonth.toString()+")" 
     document.getElementById("year").innerHTML   =   "An: " + pumbaYear.toString() 
     
     //Roles
@@ -32,14 +34,22 @@ document.addEventListener('DOMContentLoaded', function() {
 //     // alert("Ready!");
 // }, false);
 
-function  positionOverflow(place, nbMax = 4) {
+function  positionOverflow(place, nbMax = 4) 
+{
     let a = Math.floor(place / nbMax)
     let b;
     place%nbMax!=0 ? b = place - a * nbMax : b = nbMax;
     return b
 }
 
-function getRoles(pumbaMonth){
+function getMonthName(month)
+{
+    const noms=["Maximaire","Namaire","Vanaire"]
+    return noms[month-1]
+}
+
+function getRoles(pumbaMonth)
+{
     const i = 'Ivan'
     const n = 'Nam'
     const m = 'Maxime'
