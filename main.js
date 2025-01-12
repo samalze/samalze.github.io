@@ -23,6 +23,22 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById("menu").classList.remove("makeSmaller");
         }
     });
+
+
+
+    const resizeObserver = new ResizeObserver(() => {
+        const ratio = window.innerHeight / window.innerWidth;
+      
+        if (ratio > 1) {
+          document.getElementById('PumbaImg').src = "R4.jpg"
+          console.log("Cas 1: window.innerHeight / window.innerWidth est supérieur à 1");
+        } else {
+          console.log("Cas 2: window.innerHeight / window.innerWidth est inférieur ou égal à 1");
+          document.getElementById('PumbaImg').src = "R.jpg"
+        }
+      });
+
+    resizeObserver.observe(document.documentElement);
 });
 
 
