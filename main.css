@@ -21,6 +21,7 @@ body{
 }
 
 #cadre_logo {
+    width: 100vw;
     /* display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr; */
@@ -53,6 +54,8 @@ body{
 
 
 #cadre_logo img {
+    width: 100vw;
+
     position: absolute;
     height:90vh;
     object-fit: cover;

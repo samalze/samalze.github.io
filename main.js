@@ -31,10 +31,14 @@ document.addEventListener('DOMContentLoaded', () => {
       
         if (ratio > 1) {
           document.getElementById('PumbaImg').src = "R4.jpg"
-          console.log("Cas 1: window.innerHeight / window.innerWidth est supérieur à 1");
+          document.getElementById('menu').classList.add("phoneMenu")
+        //   console.log("Cas 1: window.innerHeight / window.innerWidth est supérieur à 1");
         } else {
-          console.log("Cas 2: window.innerHeight / window.innerWidth est inférieur ou égal à 1");
-          document.getElementById('PumbaImg').src = "R.jpg"
+            document.getElementById('PumbaImg').src = "R.jpg"
+            document.getElementById('menu').classList.remove("phoneMenu")
+
+
+        //   console.log("Cas 2: window.innerHeight / window.innerWidth est inférieur ou égal à 1");
         }
       });
 
