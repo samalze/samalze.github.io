@@ -30,13 +30,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const ratio = window.innerHeight / window.innerWidth;
       
         if (ratio > 1) {
-          document.getElementById('PumbaImg').src = "R4.jpg"
-          document.getElementById('menu').classList.add("phoneMenu")
-        //   console.log("Cas 1: window.innerHeight / window.innerWidth est supérieur à 1");
+            document.getElementById('PumbaImg').src = "R4.jpg"
+            document.getElementById('menu').classList.add("phoneMenu")
+            document.getElementById('menuWrapper').classList.add("menuWrapperPhone")
+            document.getElementById('menuWrapper').classList.remove("menuWrapperPC")
+            //   console.log("Cas 1: window.innerHeight / window.innerWidth est supérieur à 1");
         } else {
             document.getElementById('PumbaImg').src = "R.jpg"
             document.getElementById('menu').classList.remove("phoneMenu")
-
+            document.getElementById('menuWrapper').classList.remove("menuWrapperPhone")
+            document.getElementById('menuWrapper').classList.add("menuWrapperPC")
 
         //   console.log("Cas 2: window.innerHeight / window.innerWidth est inférieur ou égal à 1");
         }
