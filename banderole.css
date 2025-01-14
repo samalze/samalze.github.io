@@ -1,6 +1,8 @@
 :root{
     --bigTitleFont: 30px;
     --smallTitleFont: 15px ;
+
+    --menuSize: 3em;
 }
 
 .rotateRight90 {
@@ -23,8 +25,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width:60px;
-    height: 60px;
+
+    width:var(--menuSize);
+    height: var(--menuSize);
+
     left: 5vw;
     position: absolute;
     padding:1%;
@@ -37,7 +41,7 @@
 }
 
 .phoneMenu { 
-    top:13vh
+    top:13vh;
 }
 
 #menuWrapper {
@@ -53,11 +57,22 @@
 
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    /* justify-content: space-evenly; */
     align-items: center;
     /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+
 }
 
+#menuContentContainer{
+    height: 50%;
+    justify-content: space-evenly;display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items: center;
+}
+#menuWrapper a {
+    font-size: 190%;
+}
 
 .menuWrapperPC{
     width: 15vw;
@@ -86,14 +101,14 @@
 }
 .menuIcon {
     background: black;
-    width:33px;
     height: 3px;
     border-radius: 10px;
+    width:75%;
 }
 .menuSmallerIcon {
     margin-top: 7px;
     margin-bottom: 7px;
-    width:20px;
+    width:40%;
 }
 
 #menu:hover {
@@ -154,6 +169,10 @@
 .lien_banderole:hover{   
     transition-duration: 1s;
     font-weight: 250;
+}
+
+.lienBanderolePhone {
+    visibility: collapse;
 }
 
 .taille1{

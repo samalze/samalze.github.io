@@ -89,7 +89,7 @@ h1 {
     font-weight: 600;
     font-style: normal;
     text-transform: uppercase;
-    font-size: 58px;
+    font-size: 10vmin;
     color: white;
     letter-spacing: 2px;
     line-height: 1em;
@@ -103,7 +103,7 @@ h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 22px;
+    font-size: 3vmin;
     text-transform: uppercase;
     letter-spacing: 3px;
     color: white;
@@ -175,3 +175,11 @@ h1 {
     grid-row-start: 2;
     grid-row-end: 4;
 }
+
+/* .titrePhoneGrand { 
+    font-size: 1em;
+    
+}
+.titrePhonePetit { 
+    font-size: 8vmin;
+} */

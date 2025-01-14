@@ -31,15 +31,28 @@ document.addEventListener('DOMContentLoaded', () => {
       
         if (ratio > 1) {
             document.getElementById('PumbaImg').src = "R4.jpg"
-            document.getElementById('menu').classList.add("phoneMenu")
             document.getElementById('menuWrapper').classList.add("menuWrapperPhone")
             document.getElementById('menuWrapper').classList.remove("menuWrapperPC")
+
+            let sousTitres = document.getElementsByClassName("lien_banderole");
+            for(let i = 0;i<sousTitres.length; i++){
+                sousTitres[i].classList.add("lienBanderolePhone")
+            }
+
+            // document.getElementById('sous_titre').classList.add("titrePhoneGrand")
+            // document.getElementById('titre').classList.add("titrePhonePetit")
+            
+
             //   console.log("Cas 1: window.innerHeight / window.innerWidth est supérieur à 1");
         } else {
             document.getElementById('PumbaImg').src = "R.jpg"
-            document.getElementById('menu').classList.remove("phoneMenu")
             document.getElementById('menuWrapper').classList.remove("menuWrapperPhone")
             document.getElementById('menuWrapper').classList.add("menuWrapperPC")
+
+            let sousTitres = document.getElementsByClassName("lien_banderole");
+            for(let i = 0;i<sousTitres.length; i++){
+                sousTitres[i].classList.remove("lienBanderolePhone")
+            }
 
         //   console.log("Cas 2: window.innerHeight / window.innerWidth est inférieur ou égal à 1");
         }
