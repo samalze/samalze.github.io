@@ -1,4 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const ratio = window.innerHeight / window.innerWidth;
+    let sousTitres = document.getElementsByClassName("lien_banderole");
+    if (ratio > 1){
+        for(let i = 0;i<sousTitres.length; i++){
+            sousTitres[i].classList.add("lienBanderolePhone")
+        }
+    }
+
     // Sélectionne l'élément avec la classe "banderole"
     const banderole = document.querySelector('.banderole');
     const titre = document.querySelector('.titre_banderole');
