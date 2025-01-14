@@ -2,7 +2,7 @@
     --bigTitleFont: 30px;
     --smallTitleFont: 15px ;
 
-    --menuSize: 3em;
+    --menuSize: 2.5em;
 }
 
 .rotateRight90 {
@@ -119,7 +119,8 @@
 
 .banderole{
     height: 12vh;
-    width: 100%;
+    left:0;
+    width: 100vw;
     background-color: white;
     display: flex;
     gap: 20px;
