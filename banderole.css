@@ -55,6 +55,9 @@
     visibility: hidden;
     overflow: hidden;
 
+    top:0;
+    left:0;
+
     display: flex;
     flex-direction: column;
     /* justify-content: space-evenly; */
@@ -128,7 +131,7 @@
     align-items: center;
     position:fixed;
     z-index: 1000;
-    transition-duration: 0.5s;
+    transition-duration: transform 0.5s;
     top: 0;
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;;
 }
