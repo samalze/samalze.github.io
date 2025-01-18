@@ -47,6 +47,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 sousTitres[i].classList.add("lienBanderolePhone")
             }
 
+            let elementsContact = document.getElementsByClassName("contactContainer");
+            for(let i = 0;i<elementsContact.length; i++){
+                elementsContact[i].classList.add("contactContainerPhone")
+            }
             // document.getElementById('sous_titre').classList.add("titrePhoneGrand")
             // document.getElementById('titre').classList.add("titrePhonePetit")
             
@@ -60,6 +64,11 @@ document.addEventListener('DOMContentLoaded', () => {
             let sousTitres = document.getElementsByClassName("lien_banderole");
             for(let i = 0;i<sousTitres.length; i++){
                 sousTitres[i].classList.remove("lienBanderolePhone")
+            }
+
+            let elementsContact = document.getElementsByClassName("contactContainer");
+            for(let i = 0;i<elementsContact.length; i++){
+                elementsContact[i].classList.remove("contactContainerPhone")
             }
 
         //   console.log("Cas 2: window.innerHeight / window.innerWidth est inférieur ou égal à 1");

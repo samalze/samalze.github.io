@@ -138,26 +138,38 @@ h1 {
 /*  |||||||||||||||||||||||||Contacts : Whatsapp / header |||||||||||||||||||||||||||| */
 
 #contactWrapper{
-    /* height: 100vh ; */
-    /* background: red; */
-    display: grid;
-    
+    /* display: grid;
     grid-template-columns: repeat(2,1fr)  ;
-    grid-template-rows: repeat(3,1fr)  ;
-    /* column-gap: 15fr; */
-    /* row-gap: 2fr; */
+    grid-template-rows: repeat(3,1fr)  ; */
+    padding: 1vw;
+    display : flex;
+    flex-wrap: wrap;
+
+    z-index: -15;
+
 }
 
 .contactWrapperContainer {
-    transition: 0.5s;
+    transition: transform 0.5s;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    margin: 30px;
     border-radius: 30px;
-    background: green;
+    background: rgb(0, 0, 0);
+
+    background-image: url("./ressources/fougere.jpg");
+    margin: 2%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    
+    /* padding: 2vw; */
+    
 }
 
 .contactWrapperContainer:hover{
-    z-index: -15;
     /* transition: all 0.5s; */
     /* transform: translate(150px); */
     transform: scale(1.01);
@@ -165,21 +177,30 @@ h1 {
 }
 
 .contactHeader {
-    grid-column-start: 1;
-    z-index: -15;
-    grid-column-end: 3;  
+    width: 100%;
 }
 .contactContainer {
-    z-index: -15;
-
-    grid-row-start: 2;
-    grid-row-end: 4;
+    width: 46%;
 }
 
-/* .titrePhoneGrand { 
-    font-size: 1em;
-    
+.contactContainerPhone {
+    width: 100%;
 }
-.titrePhonePetit { 
-    font-size: 8vmin;
-} */
+
+.ContentWrapperText {
+    text-align: center;
+    font-family: "Montserrat";
+    color:white;
+    font-size: 1.5rem;
+    margin:0;    
+
+    display: flex;
+    justify-content: center;
+
+    text-decoration: none;
+    padding-inline: 5%;
+}
+#grosContentWrapperText { 
+    margin-top: 3vmin;
+    font-size: 3rem;
+}
