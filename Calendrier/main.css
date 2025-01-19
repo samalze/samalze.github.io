@@ -1,3 +1,7 @@
+/* body{
+    background-image: url("../ressources/fougereBlanche.jpg");
+} */
+
 .wrapper{
     margin-top:13vh;
 
@@ -19,8 +23,10 @@
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     width: 80%;
     padding: 1%;
-    /* border-radius:25px; */
+    border-radius:5px;
 
+    background-image: url("../ressources/fougere.jpg");
+    color:white;
 }
 
 .date span , .roles p
@@ -53,9 +59,10 @@
 
 #rappel {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-
+    
     padding: 2%;
     background: rgba(175, 175, 175, 0.5);
+    /* background-image: url("../ressources/fougereBlanche.jpg"); */
     margin: 30px;
     border-radius:5px;
     width: 78%;
